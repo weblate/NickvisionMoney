@@ -34,6 +34,14 @@ public class Account : IDisposable
     /// </summary>
     public Dictionary<uint, Transaction> Transactions { get; init; }
 
+    public string Name;
+    public bool UseCustomCurrency;
+    public string CustomCurrencySymbol;
+    public string CustomCurrencyCode;
+    public int DefaultTransactionType;
+    public int Type;
+    public bool SaveGroupsListState;
+
     /// <summary>
     /// Constructs an Account
     /// </summary>
@@ -51,6 +59,9 @@ public class Account : IDisposable
         }.ConnectionString);
         _database.Open();
         //Setup Tables
+        var cmdTableSettings = _database.CreateCommand();
+        cmdTableSettings.CommandText = "CREATE TABLE IF NOT EXISTS settings (name TEXT PRIMARY KEY, custom_currency BIT, custom_symbol TEXT, custom_code TEXT, default_transaction_type INTEGER, account_type INTEGER, save_groups_list_state BIT)";
+        cmdTableSettings.ExecuteNonQuery();
         var cmdTableGroups = _database.CreateCommand();
         cmdTableGroups.CommandText = "CREATE TABLE IF NOT EXISTS groups (id INTEGER PRIMARY KEY, name TEXT, description TEXT)";
         cmdTableGroups.ExecuteNonQuery();
@@ -78,6 +89,20 @@ public class Account : IDisposable
             cmdTableTransactionsUpdate3.ExecuteNonQuery();
         }
         catch { }
+        //Get Settings
+        var cmdQuerySettings = _database.CreateCommand();
+        cmdQuerySettings.CommandText = "SELECT * FROM settings";
+        using var readQuerySettings = cmdQuerySettings.ExecuteReader();
+        while(readQuerySettings.Read())
+        {
+            Name = readQuerySettings.GetString(1);
+            UseCustomCurrency = readQuerySettings.GetBoolean(2);
+            CustomCurrencySymbol = readQuerySettings.GetString(3);
+            CustomCurrencyCode = readQuerySettings.GetString(4);
+            DefaultTransactionType = readQuerySettings.GetInt32(5);
+            Type = readQuerySettings.GetInt32(6);
+            SaveGroupsListState = readQuerySettings.GetBoolean(7);
+        }
         //Get Groups
         var cmdQueryGroups = _database.CreateCommand();
         cmdQueryGroups.CommandText = "SELECT g.*, CAST(COALESCE(SUM(IIF(t.type=1, -t.amount, t.amount)), 0) AS TEXT) FROM groups g LEFT JOIN transactions t ON t.gid = g.id GROUP BY g.id;";
