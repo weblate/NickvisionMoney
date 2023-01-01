@@ -35,12 +35,15 @@ public class Account : IDisposable
     public Dictionary<uint, Transaction> Transactions { get; init; }
 
     public string Name;
+    public string Currency;
     public bool UseCustomCurrency;
     public string CustomCurrencySymbol;
     public string CustomCurrencyCode;
     public int DefaultTransactionType;
     public int Type;
-    public bool SaveGroupsListState;
+    public bool SaveHideGroups;
+    public bool HideGroups;
+    public bool ShowReceiptMark;
 
     /// <summary>
     /// Constructs an Account
@@ -60,7 +63,7 @@ public class Account : IDisposable
         _database.Open();
         //Setup Tables
         var cmdTableSettings = _database.CreateCommand();
-        cmdTableSettings.CommandText = "CREATE TABLE IF NOT EXISTS settings (name TEXT PRIMARY KEY, custom_currency BIT, custom_symbol TEXT, custom_code TEXT, default_transaction_type INTEGER, account_type INTEGER, save_groups_list_state BIT)";
+        cmdTableSettings.CommandText = "CREATE TABLE IF NOT EXISTS settings (name TEXT PRIMARY KEY, currency TEXT, custom_currency BIT, custom_symbol TEXT, custom_code TEXT, default_transaction_type INTEGER, account_type INTEGER, save_hide_groups BIT, hide_groups BIT, show_receipt_mark BIT)";
         cmdTableSettings.ExecuteNonQuery();
         var cmdTableGroups = _database.CreateCommand();
         cmdTableGroups.CommandText = "CREATE TABLE IF NOT EXISTS groups (id INTEGER PRIMARY KEY, name TEXT, description TEXT)";
@@ -96,12 +99,15 @@ public class Account : IDisposable
         while(readQuerySettings.Read())
         {
             Name = readQuerySettings.GetString(1);
-            UseCustomCurrency = readQuerySettings.GetBoolean(2);
-            CustomCurrencySymbol = readQuerySettings.GetString(3);
-            CustomCurrencyCode = readQuerySettings.GetString(4);
-            DefaultTransactionType = readQuerySettings.GetInt32(5);
-            Type = readQuerySettings.GetInt32(6);
-            SaveGroupsListState = readQuerySettings.GetBoolean(7);
+            Currency = readQuerySettings.GetString(2);
+            UseCustomCurrency = readQuerySettings.GetBoolean(3);
+            CustomCurrencySymbol = readQuerySettings.GetString(4);
+            CustomCurrencyCode = readQuerySettings.GetString(5);
+            DefaultTransactionType = readQuerySettings.GetInt32(6);
+            Type = readQuerySettings.GetInt32(7);
+            SaveHideGroups = readQuerySettings.GetBoolean(8);
+            HideGroups = readQuerySettings.GetBoolean(9);
+            ShowReceiptMark = readQuerySettings.GetBoolean(10);
         }
         //Get Groups
         var cmdQueryGroups = _database.CreateCommand();

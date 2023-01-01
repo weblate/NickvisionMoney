@@ -80,6 +80,10 @@ public class AccountViewController
     /// Occurs when a transfer is sent from this account
     /// </summary>
     public event EventHandler<Transfer>? TransferSent;
+    /// <summary>
+    /// Occurs when a setup dialog for this account is requested
+    /// </summary>
+    public event EventHandler? StartSetup;
 
     /// <summary>
     /// Creates an AccountViewController
@@ -93,6 +97,11 @@ public class AccountViewController
         _filters = new Dictionary<int, bool>();
         Localizer = localizer;
         NotificationSent = notificationSent;
+        //Call Account Setup if needed
+        if(string.IsNullOrEmpty(_account.Name))
+        {
+            StartSetup?.Invoke(this, EventArgs.Empty);
+        }
         //Setup Filters
         _filters.Add(-3, true); //Income 
         _filters.Add(-2, true); //Expense
