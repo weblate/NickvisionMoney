@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-14 22:10-0500\n"
-"PO-Revision-Date: 2023-12-29 06:12+0000\n"
-"Last-Translator: Óscar Fernández Díaz <oscfdezdz@users.noreply.hosted.weblate"
-".org>\n"
+"PO-Revision-Date: 2025-07-22 17:04+0000\n"
+"Last-Translator: Óscar Fernández Díaz "
+"<42654671+oscfdezdz@users.noreply.github.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/nickvision-money/"
 "app/es/>\n"
 "Language: es\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: ../../../Controllers/AccountViewController.cs:508
 msgid "(Copy)"
@@ -102,12 +102,12 @@ msgstr "Todos los archivos"
 #: NickvisionMoney.GNOME/Blueprints/transaction_dialog.blp:72
 #: NickvisionMoney.GNOME/Blueprints/transfer_dialog.blp:73
 msgid "Amount"
-msgstr "Importe"
+msgstr "Cantidad"
 
 #: ../../../../NickvisionMoney.GNOME/Views/TransactionDialog.cs:512
 #: ../../../../NickvisionMoney.GNOME/Views/TransferDialog.cs:194
 msgid "Amount (Invalid)"
-msgstr "Importe (no válido)"
+msgstr "Cantidad (no válido)"
 
 #: ../../../../NickvisionMoney.GNOME/Views/GroupDialog.cs:107
 #: ../../../../NickvisionMoney.GNOME/Views/TransactionDialog.cs:179
@@ -1140,7 +1140,7 @@ msgstr "Resultado"
 
 #: NickvisionMoney.GNOME/Blueprints/currency_converter_dialog.blp:87
 msgid "Copy Result Amount"
-msgstr "Copiar el resultado del importe"
+msgstr "Copiar el resultado de la cantidad"
 
 #: NickvisionMoney.GNOME/Blueprints/dashboard_view.blp:13
 msgid "All Accounts"
@@ -1348,7 +1348,7 @@ msgid ""
 "into an amount field."
 msgstr ""
 "Establecer para qué teclas pulsadas se insertará el separador decimal de la "
-"configuración regional en un campo de importe."
+"configuración regional en un campo de cantidad."
 
 #: NickvisionMoney.GNOME/Blueprints/preferences_dialog.blp:123
 msgctxt "InsertSeparator"
@@ -1502,9 +1502,9 @@ msgid ""
 "in this account and an income transaction with the given amount in the "
 "account to transfer to."
 msgstr ""
-"Al transferir dinero se creará una operación de gasto con el importe dado en "
-"esta cuenta y una operación de ingreso con el importe dado en la cuenta a la "
-"que se va a transferir."
+"Al transferir dinero se creará una operación de gasto con la cantidad dada "
+"en esta cuenta y una operación de ingreso con la cantidad dada en la cuenta "
+"a la que se va a transferir."
 
 #: NickvisionMoney.GNOME/Blueprints/transfer_dialog.blp:37
 msgid "No Account Selected"
