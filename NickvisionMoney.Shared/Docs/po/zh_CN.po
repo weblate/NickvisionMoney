@@ -2,23 +2,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-03-18 12:22-0400\n"
-"PO-Revision-Date: 2024-02-02 03:01+0000\n"
-"Last-Translator: aerowolf <aerowolf@tom.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"nickvision-money/docs/zh_CN/>\n"
+"PO-Revision-Date: 2025-11-21 03:51+0000\n"
+"Last-Translator: aerowolf <aerowolf_sn@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/nickvision-money/docs/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "翻译者荣誉榜\n"
-"Yuanlijie<aerowolf@tom.com>"
+"Yuanlijie <aerowolf@tom.com>"
 
 #. (itstool) path: info/title
 #: yelp/C/account.page:8
@@ -52,6 +52,8 @@ msgid ""
 "them are shown in <gui>Account Settings Dialog</gui>. This dialog also opens "
 "automatically after you create a new account."
 msgstr ""
+"本页介绍<app>Denaro</app>中账户的所有属性。其中大部分显示在<gui>账户设置对话"
+"框</gui>中。此对话框也会在您创建新账户后自动打开。"
 
 #. (itstool) path: page/p
 #: yelp/C/account.page:22
@@ -63,6 +65,10 @@ msgid ""
 "nmoney</file> files are 100% compatible between platforms as long as they "
 "are from the same application version (i.e. V2023.1.0)."
 msgstr ""
+"每个账户都存储在一个<file>*.nmoney</file>文件中。在旧版<app>Denaro</app><em>"
+"稳定版</em>中创建的文件可在新版<em>稳定版</em>中安全打开。即使该应用运行在不"
+"同平台（Windows和Linux），但只要版本（例如 v2023.1.0）相同，<file>*.nmoney</f"
+"ile>文件在各平台之间100%兼容。"
 
 #. (itstool) path: note/p
 #: yelp/C/account.page:24
@@ -70,7 +76,8 @@ msgid ""
 "Unstable (Beta and RC) versions of the application can contain bugs or "
 "unfinished modifications that can cause data loss. DO NOT use account files "
 "that contain real data in unstable versions of the app!"
-msgstr ""
+msgstr "不稳定（Beta和RC）版可能包含会导致数据丢失的错误或未完成的修改。请勿在不稳定"
+"版本中使用包含真实数据的账户文件！"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:29
@@ -83,7 +90,8 @@ msgid ""
 "Account name is shown in the list of recent accounts and in tabs. A name "
 "doesn't have a length limit and it can contain any characters, including "
 "emojis."
-msgstr ""
+msgstr "账户名称显示在最近账户列表和选项卡中。名称没有长度限制，可以包含任何字符，包"
+"括表情符号。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:33
@@ -100,6 +108,10 @@ msgid ""
 "these colors can be configured in <link xref=\"configuration\">global "
 "settings</link>."
 msgstr ""
+"共有3种账户类型可供选择： 🟣<em>支票</em>、🔵<em>储蓄</em>和🟢<em>商业</em>。"
+"账户类型只是显示在最近账户列表中的有用标签，不会影响应用程序的工作方式或您可"
+"以使用账户执行的操作。每个账户类型都有自己的颜色，这些颜色可以在<link xref="
+"\"configuration\">全局设置</link>中配置。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:37
@@ -111,7 +123,7 @@ msgstr "默认的交易类型"
 msgid ""
 "When you create a new transaction its type by default will be the same as in "
 "this setting."
-msgstr ""
+msgstr "创建一个新交易时，默认情况下其类型将与此设置中的类型相同。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:41
@@ -121,12 +133,12 @@ msgstr "交易提醒阈值"
 #. (itstool) path: item/p
 #: yelp/C/account.page:42
 msgid "The threshold used when showing reminders about upcoming transactions."
-msgstr ""
+msgstr "阈值，用于显示即将进行的事务的提醒。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:45
 msgid "System Currency"
-msgstr ""
+msgstr "系统货币"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:46
@@ -137,6 +149,9 @@ msgid ""
 "format the numbers will be accepted as values for transaction amounts. A few "
 "examples:"
 msgstr ""
+"应用程序每次启动时，都会从系统区域设置中获取有关货币和数字格式的数据，这些数"
+"据用于显示货币符号（除非使用自定义货币，请参阅下文），并确定将接受何种格式的"
+"数字作为交易金额。以下是一些示例："
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:48
@@ -144,20 +159,24 @@ msgid ""
 "If your locale is <em>English (US)</em>, currency symbol will be set to "
 "<em>$</em> and <em>1,000.00</em> will be accepted as a valid number."
 msgstr ""
+"如果您的区域设置为<em>英语（美国）</em>，则货币符号将设置为<em>$</em>，并且<e"
+"m>1，000.00</em>将被接受为有效数字。"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:49
 msgid ""
 "If your locale is <em>Italian</em>, currency symbol will be set to <em>€</"
 "em> and <em>1.000,00</em> will be accepted as a valid number."
-msgstr ""
+msgstr "如果您的区域设置为<em>意大利语</em>，货币符号将设置为<em>€</em>，<em>1.000，0"
+"0</em>将被接受为有效数字。"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:50
 msgid ""
 "If your locale is <em>Russian</em>, currency symbol will be set to <em>₽</"
 "em> and <em>1000,00</em> will be accepted as a valid number."
-msgstr ""
+msgstr "如果您的区域设置为<em>俄语</em>，货币符号将设置为<em>₽</em>，<em>1000，00</em"
+">将被接受为有效数字。"
 
 #. (itstool) path: note/p
 #: yelp/C/account.page:53
@@ -174,6 +193,13 @@ msgid ""
 "output of the <code>locale</code> command to allow developers to reproduce "
 "your issue with the same settings."
 msgstr ""
+"在Linux上，可以为系统语言和格式设置不同的区域设置。更改这些设置取决于您使用的"
+"桌面环境。尽管这些设置在桌面上的位置不同，但更改这些设置会修改系统环境变量，"
+"如<code>LANG</code>、<code>LC_TIME</code>和<code>LC_MONETARY</code>。<app>Den"
+"aro</app>将根据这些变量尝试使用金额和日期格式。如果应用程序未能使用预期的格式"
+"，请确保通过终端中的<code>locale</code>命令正确设置变量。如果发现错误并想要报"
+"告它，请提供<code>locale</code>命令的输出，以便开发人员使用相同的设置重现您的"
+"问题。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:57
@@ -185,79 +211,80 @@ msgstr "使用自定义货币"
 msgid ""
 "If this option is enabled, <gui>Custom Currency Symbol</gui> will be used "
 "instead of currency symbol provided by your system locale."
-msgstr ""
+msgstr "如果启用此选项，则将使用<gui>自定义货币符号</gui>，而不是系统区域设置提供的货"
+"币符号。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:61
 msgid "Custom Currency Symbol"
-msgstr ""
+msgstr "自定义货币符号"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:62
 msgid "Up to 3 characters or 1 emoji. It can't be a number."
-msgstr ""
+msgstr "最多3个字符或1个emoji。不能是数字。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:65
 msgid "Custom Currency Code"
-msgstr ""
+msgstr "自定义货币代码"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:66
 msgid "Up to 3 characters or 1 emoji."
-msgstr ""
+msgstr "最多3个字符或1个emoji。"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:67
 msgid ""
 "An example to understand the difference between a symbol and a code: <em>$</"
 "em> is a symbol, <em>USD</em> is a code."
-msgstr ""
+msgstr "符号和代码的区别示例：<em>$</em>是符号，<em>USD</em>是代码。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:70
 msgid "Custom Currency Amount Style"
-msgstr ""
+msgstr "自定义货币金额样式"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:71
 msgid "A choice of displaying an amount in one of the following ways:"
-msgstr ""
+msgstr "选择以下某个方式显示金额："
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:73
 msgid "$n"
-msgstr ""
+msgstr "$n"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:74
 msgid "n$"
-msgstr ""
+msgstr "n$"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:75
 msgid "$ n"
-msgstr ""
+msgstr "$ n"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:76
 msgid "n $"
-msgstr ""
+msgstr "n $"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:80
 msgid "Custom Currency Decimal and Group Separators"
-msgstr ""
+msgstr "自定义货币小数点和组分隔符"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:81
 msgid "Up to 2 characters or 1 emoji."
-msgstr ""
+msgstr "最多2个字符或1个emoji。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:84
 msgid "Custom Currency Decimal Digits"
-msgstr ""
+msgstr "自定义货币十进制数字"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:85
@@ -265,7 +292,8 @@ msgid ""
 "The size of decimal part of amount values. With \"Unlimited\" digits there "
 "will be as many numbers in decimal part as required to show the precise "
 "amount, but there will be no decimal part if the amount is an integer number."
-msgstr ""
+msgstr "金额值小数部分的大小。使用“无限”数字时，小数部分将尽可能多，以便显示精确的金"
+"额，但如果金额是整数，则没有小数部分。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:88
@@ -282,11 +310,14 @@ msgid ""
 "using the account settings dialog of an open account. Removing a password "
 "will decrypt the account."
 msgstr ""
+"每个账户都可以设置密码保护。添加密码会加密账户（不使用密码解密就无法读取数据"
+"）。小心：如果密码丢失，您将无法恢复数据！已设置密码保护的账户，在账户设置对"
+"话框中，可以更改或删除密码。删除密码将解密账户。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:92
 msgid "Sort by Id, Date or Amount"
-msgstr ""
+msgstr "按ID、日期或金额排序"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:93
@@ -294,12 +325,13 @@ msgid ""
 "Each account stores whether to sort transactions in the main window by their "
 "id, date or amount. Every time you change this, it will be saved to the "
 "account file and restored when you reopen the account."
-msgstr ""
+msgstr "每个账户存储是否在主窗口中按其ID、日期或金额对交易进行排序。每次修改此设置时"
+"，它都会保存到账户文件中，并在重新打开账户时恢复。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:96
 msgid "Sorting Order"
-msgstr ""
+msgstr "排序顺序"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:97
@@ -307,12 +339,13 @@ msgid ""
 "Each account stores information about the order of transactions in the main "
 "window. Every time you change this, it will be saved to the account file and "
 "restored when you reopen the account."
-msgstr ""
+msgstr "每个账户在主窗口中存储有关交易顺序的信息。每次修改此设置时，它都会保存到账户"
+"文件中，并在重新打开账户时恢复。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:100
 msgid "Groups Visibility"
-msgstr ""
+msgstr "组可见性"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:101
@@ -320,12 +353,13 @@ msgid ""
 "Each account stores information about whether the groups list in the main "
 "window is hidden or not. Every time you change groups list visibility, it's "
 "saved and then restored when you reopen the account."
-msgstr ""
+msgstr "每个账户存储有关主窗口中的组列表是否隐藏的信息。每次修改组列表可见性时，它都"
+"会保存，然后在重新打开账户时恢复。"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:104
 msgid "Tags Visibility"
-msgstr ""
+msgstr "标签可见性"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:105
@@ -333,31 +367,33 @@ msgid ""
 "Each account stores information about whether the tags list in the main "
 "window is hidden or not. Every time you change tags list visibility, it's "
 "saved and then restored when you reopen the account."
-msgstr ""
+msgstr "每个账户存储关于主窗口中的标签列表是否隐藏的信息。每次修改标签列表可见性时，"
+"都会保存该列表，然后在重新打开账户时恢复。"
 
 #. (itstool) path: info/title
 #: yelp/C/configuration.page:8
 msgctxt "link"
 msgid "Configuration 🔧"
-msgstr ""
+msgstr "配置🔧"
 
 #. (itstool) path: page/title
 #: yelp/C/configuration.page:20
 msgid "Configuration"
-msgstr ""
+msgstr "配置"
 
 #. (itstool) path: page/p
 #: yelp/C/configuration.page:21
 msgid ""
 "This page describes what you can change in the application configuration."
-msgstr ""
+msgstr "本页介绍可在应用程序配置中修改的内容。"
 
 #. (itstool) path: page/p
 #: yelp/C/configuration.page:22
 msgid ""
 "Depending on your platform, in the application interface the configuration "
 "is referred as either <gui>Preferences</gui> or <gui>Settings</gui>."
-msgstr ""
+msgstr "在不同的平台，在应用程序界面中，配置被称为<gui>首选项</gui>或<gui>设置</gui>"
+"。"
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:25
@@ -369,7 +405,8 @@ msgstr "主题"
 msgid ""
 "Set light or dark theme, or make <app>Denaro</app> follow your system theme. "
 "Changing this on Windows requires the application restart to apply."
-msgstr ""
+msgstr "设置亮色或暗色主题，或使<app>Denaro</app>遵循系统主题。在Windows上修改此设置"
+"需要重新启动应用程序。"
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:29
@@ -384,6 +421,8 @@ msgid ""
 "will not affect existing transactions, even if they use previously selected "
 "default color."
 msgstr ""
+"添加具有唯一颜色的新<link xref=\"transaction\">交易</link>时默认选择的颜色。"
+"修改此设置不会影响已有交易，即使它们使用以前选择的默认颜色。"
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:33
@@ -396,7 +435,8 @@ msgid ""
 "A color that will be used for transactions created using <link "
 "xref=\"transfer\">transfer</link>. Changing this will not affect existing "
 "transactions."
-msgstr ""
+msgstr "将用于使用<link xref=\"transfer\">转帐</link>创建的交易的颜色。修改此设置不会"
+"影响现有交易。"
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:37
@@ -408,7 +448,7 @@ msgstr "群组默认颜色"
 msgid ""
 "A color that will be selected by default when adding a new group. This is "
 "also a color for «Ungrouped» group."
-msgstr ""
+msgstr "添加新组时默认选择的颜色。这也是«未分组»组的颜色。"
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:41
@@ -420,7 +460,8 @@ msgstr "支票账户颜色"
 msgid ""
 "A color used to mark <link xref=\"account\">accounts</link> with the "
 "<em>Checking</em> type in a recent accounts list."
-msgstr ""
+msgstr "用于在最近账户列表中标记<em>支票</em>类型<link xref=\"account\">账户</link>的"
+"颜色。"
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:45
@@ -432,7 +473,8 @@ msgstr "储蓄账户颜色"
 msgid ""
 "A color used to mark <link xref=\"account\">accounts</link> with the "
 "<em>Savings</em> type in a recent accounts list."
-msgstr ""
+msgstr "用于在最近账户列表中标记<em>储蓄</em>类型<link xref=\"account\">账户</link>的"
+"颜色。"
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:49
@@ -444,7 +486,8 @@ msgstr "商务账户颜色"
 msgid ""
 "A color used to mark <link xref=\"account\">accounts</link> with the "
 "<em>Business</em> type in a recent accounts list."
-msgstr ""
+msgstr "用于在最近帐户列表中标记<em>业务</em>类型<link xref=\"account\">账户</link>的"
+"颜色。"
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:53
@@ -458,6 +501,8 @@ msgid ""
 "digits. For example, if this setting is enabled <em>٠١٢</em> will be used "
 "instead of <em>012</em> for locales that use Eastern Arabic numerals."
 msgstr ""
+"是否使用本地语言环境的数字而不是拉丁数字。例如，对于使用东方阿拉伯语标记地区"
+"，如果启用此设置，则使用<em>٠١٢</em>而不是<em>012</em>。"
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:57
@@ -470,7 +515,8 @@ msgid ""
 "Set for which keys pressed will the locale's decimal separator be inserted "
 "into an amount field: numpad period, any period and comma, or none. If "
 "decimal separator is already presented in a field, it will not be inserted."
-msgstr ""
+msgstr "设置按下哪些键将在金额字段中插入区域设置的小数点分隔符：数字小点号、任意点号"
+"和逗号或无。如果字段中已经存在小数分隔符，则不会插入小数分隔符。"
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:61
@@ -485,32 +531,34 @@ msgid ""
 "work for password-protected accounts, because CSV files can't be password-"
 "protected."
 msgstr ""
+"文件夹，用于保存数据在每次修改后自动<link xref=\"import-export\">导出到CSV</l"
+"ink>。此功能不适用于受密码保护的账户，因为CSV文件无法受密码保护。"
 
 #. (itstool) path: info/title
 #: yelp/C/import-export.page:8
 msgctxt "link"
 msgid "Import/Export 📤"
-msgstr ""
+msgstr "导入/导出 📤"
 
 #. (itstool) path: page/title
 #: yelp/C/import-export.page:20
 msgid "Import/Export"
-msgstr ""
+msgstr "导入/导出"
 
 #. (itstool) path: div/title
 #: yelp/C/import-export.page:22
 msgid "Import Formats"
-msgstr ""
+msgstr "导入格式"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:26
 msgid "Dates should be in <em>YYYYMMDD</em> format."
-msgstr ""
+msgstr "日期应当采用<em>YYYYMMDD</em>格式。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:30
 msgid "Dates should be in English (US) format (<em>MM/DD/YYYY</em>)."
-msgstr ""
+msgstr "日期应为英文（US）格式（<em>MM/DD/YYYY</em>）。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:34
@@ -525,100 +573,108 @@ msgid ""
 "ones. If you want to create a CSV file manually, this is the header that "
 "includes all columns <app>Denaro</app> expects to find:"
 msgstr ""
+"❗虽然CSV是一种常见的格式，一些银行允许他们的用户将信息导出为CSV，但这些文件"
+"实际上是可以包含任意数据的表。在其他程序中创建的CSV文件，可能会导入失败，因为"
+"它的数据与<app>Denaro</app>想要从文件中读取的数据不兼容。CSV导入/导出的目的是"
+"提供一种使用外部程序（如文本编辑器和办公套件）将数据添加到账户的方法。导入只"
+"会添加新的交易，而不会覆盖已有的交易。如果您想手动创建一个CSV文件，这是一个表"
+"头，其中包含<app>Denaro</app>需要的所有列标题："
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:39
 msgid "Transaction Id, should be unique for a given account. Ids start with 1."
-msgstr ""
+msgstr "交易ID，对于给定的账户应该是唯一的。ID从1开始。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:43
 msgid ""
 "Transaction date (or start date in case of repeat transaction), should be in "
 "English (US) format (<em>MM/DD/YYYY</em>)."
-msgstr ""
+msgstr "交易日期（或重复交易的开始日期）应采用英文（US）格式（<em>MM/DD/YYYY</em>）。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:47
 msgid ""
 "Transaction description, it can contain any characters except semicolon."
-msgstr ""
+msgstr "交易详情，它可以包含除分号之外的任何字符。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:51
 msgid "Transaction type: 0 for income, 1 for expense."
-msgstr ""
+msgstr "交易类型：0代表收入，1代表支出。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:55
 msgid "A number representing transaction repeat interval:"
-msgstr ""
+msgstr "数字，表示重复交易的间隔："
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:56
 msgid "0 - Never"
-msgstr ""
+msgstr "0 -从未"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:57
 msgid "1 - Daily"
-msgstr ""
+msgstr "1-每日"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:58
 msgid "2 - Weekly"
-msgstr ""
+msgstr "2 - 每周"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:59
 msgid "7 - Biweekly"
-msgstr ""
+msgstr "7 -每两周"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:60
 msgid "3 - Monthly"
-msgstr ""
+msgstr "3 - 每月"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:61
 msgid "4 - Quarterly"
-msgstr ""
+msgstr "4 - 每季度"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:62
 msgid "5 - Yearly"
-msgstr ""
+msgstr "4 - 每年"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:63
 msgid "6 - Biyearly"
-msgstr ""
+msgstr "6 - 每两年"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:64
 msgid ""
 "See <em>Repeat Interval</em> in <link xref=\"transaction\">transaction</"
 "link> page for details about repeat transactions."
-msgstr ""
+msgstr "有关重复交易的详细信息，请参阅<link xref=\"transaction\">交易</link>页面中的<"
+"em>重复间隔</em>。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:68
 msgid ""
 "Should be either an Id of source transaction or 0 if it's a source "
 "transaction or -1 if it's not repeat transaction."
-msgstr ""
+msgstr "应为源交易的ID，或者0（如为源交易），或者-1（如为重复交易）。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:72
 msgid ""
 "End date for repeat transaction, should be in English (US) format (<em>MM/DD/"
 "YYYY</em>). Leave it empty if it's not repeat transaction."
-msgstr ""
+msgstr "重复交易的结束日期应采用英文（US）格式（<em>MM/DD/YYYY</em>）。如果不是重复交"
+"易，请留空。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:76
 msgid "Transaction amount in English (US) format (<em>123,456.78</em>)."
-msgstr ""
+msgstr "英文（US）格式的交易金额（<em>123，456.78</em>）。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:80
@@ -626,18 +682,21 @@ msgid ""
 "Transaction color, should be in <em>rgb(R,G,B)</em> format where <em>R</em>, "
 "<em>G</em> and <em>B</em> are integers in range between 0 and 255."
 msgstr ""
+"交易颜色应采用<em>rgb(R,G,B)</em>格式，其中<em>R</em>、<em>G</em>和<em>B</em>"
+"是0到255之间的整数。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:84
 msgid "Whether a transaction should use group color: 0 — false, 1 — true."
-msgstr ""
+msgstr "交易是否应使用组颜色：0 - 否，1 - 是。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:88
 msgid ""
 "Transaction's group Id. Ids start with 1. For ungrouped transaction it "
 "should be -1 (not 0, this is incorrect value for group Id)."
-msgstr ""
+msgstr "交易的组ID。ID以1开头。对于未分组的交易，应该是-1（而不是0，这是组ID的错误值"
+"）。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:92
@@ -645,7 +704,8 @@ msgid ""
 "Transaction's group name, should match group Id. It can contain any "
 "characters except semicolon. Leave it empty for ungrouped transaction, in "
 "any other cases it shouldn't be empty."
-msgstr ""
+msgstr "交易的组名，应该与组ID匹配。它可以包含除分号之外的任何字符。对于未分组的交易"
+"，将其留空。在任何其他情况下，都不应该为空。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:96
@@ -653,7 +713,8 @@ msgid ""
 "Transaction's group description, should match group Id. It can contain any "
 "characters except semicolon and can be empty. Leave it empty for ungrouped "
 "transaction."
-msgstr ""
+msgstr "交易的组详情，应该与组ID匹配。它可以包含除分号之外的任何字符，并且可以为空。"
+"对于未分组的交易，请将其留空。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:100
@@ -661,16 +722,18 @@ msgid ""
 "Group color, should be in <em>rgb(R,G,B)</em> format where <em>R</em>, "
 "<em>G</em> and <em>B</em> are integers in range between 0 and 255."
 msgstr ""
+"组颜色，应采用<em>rgb(R,G,B)</em>格式，其中<em>R</em>、<em>G</em>和<em>B</em>"
+"是0到255之间的整数。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:103
 msgid "Receipt and notes are not present in CSV."
-msgstr ""
+msgstr "CSV中不存在收据和备注。"
 
 #. (itstool) path: div/title
 #: yelp/C/import-export.page:108
 msgid "Export Formats"
-msgstr ""
+msgstr "导出格式"
 
 #. (itstool) path: div/p
 #: yelp/C/import-export.page:109
@@ -678,7 +741,8 @@ msgid ""
 "You can select whether to export all information or only from the current "
 "view. If you select the current view, currently displayed transactions will "
 "be exported in the same order in which they are shown."
-msgstr ""
+msgstr "您可以选择是导出所有信息，还是仅从当前视图导出。如果选择当前视图，则当前显示"
+"的交易将按其显示顺序导出。"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:113
@@ -688,30 +752,33 @@ msgid ""
 "colors are modified by making them half-transparent in order to make black "
 "text always clearly visible. You can set a password for an exported file."
 msgstr ""
+"导出文件将包含账户信息、交易清单和收据图片。交易与其在应用程序中的彩色一样，"
+"但颜色被修改为半透明，以便黑色文本可以看清。可以为导出的文件设置密码。"
 
 #. (itstool) path: info/title
 #: yelp/C/index.page:7
 msgctxt "link"
 msgid "Denaro Help"
-msgstr ""
+msgstr "Denaro帮助"
 
 #. (itstool) path: info/title
 #: yelp/C/index.page:8
 msgctxt "text"
 msgid "Denaro Help"
-msgstr ""
+msgstr "Denaro帮助"
 
 #. (itstool) path: page/title
 #: yelp/C/index.page:20
 msgid "<_:media-1/> Denaro Help"
-msgstr ""
+msgstr "<_:media-1/>Denaro帮助"
 
 #. (itstool) path: page/p
 #: yelp/C/index.page:21
 msgid ""
 "This documentation will help you understand how to configure and manage data "
 "in <app>Denaro</app> to get the most of the application."
-msgstr ""
+msgstr "本文档将帮助您了解如何在<app>Denaro</app>中配置和管理数据，以便充分利用应用程"
+"序。"
 
 #. (itstool) path: page/p
 #: yelp/C/index.page:22
@@ -721,12 +788,16 @@ msgid ""
 "Denaro/discussions\">discussions</link> on Github, or <link href=\"https://"
 "bit.ly/3GrfEid\">join our Matrix channel</link>."
 msgstr ""
+"要获得支持，请使用Github上的<link href="
+"\"https://github.com/NickvisionApps/Denaro/issues\">问题</link>或<link href="
+"\"https://github.com/NickvisionApps/Denaro/discussions\">讨论</link>，或<link"
+" href=\"https://bit.ly/3GrfEid\">加入我们的Matrix频道</link>。"
 
 #. (itstool) path: info/title
 #: yelp/C/transaction.page:8
 msgctxt "link"
 msgid "Transaction 🧾"
-msgstr ""
+msgstr "交易"
 
 #. (itstool) path: page/title
 #: yelp/C/transaction.page:20
@@ -736,7 +807,7 @@ msgstr "交易"
 #. (itstool) path: page/p
 #: yelp/C/transaction.page:21
 msgid "This page explains all properties of transactions in <app>Denaro</app>."
-msgstr ""
+msgstr "本页解释<app>Denaro</app>中交易的所有属性。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:25
@@ -749,7 +820,8 @@ msgid ""
 "Each transaction has an Id that is unique for a given account. Ids start "
 "with 1 and increase for every transaction added. Ids can't be changed, ids "
 "of removed transactions are not reused."
-msgstr ""
+msgstr "每个交易都有一个ID，对于给定的账户，交易ID是唯一的。ID从1开始，每添加一笔交易"
+"，ID就会增加。ID不能更改，删除的交易的ID不能再使用。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:29
@@ -759,7 +831,7 @@ msgstr "描述"
 #. (itstool) path: item/p
 #: yelp/C/transaction.page:30
 msgid "No limit on length. It can't contain semicolon."
-msgstr ""
+msgstr "无长度限制，但不能包含分号。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:33
@@ -772,6 +844,8 @@ msgid ""
 "A number in a format that is valid for your locale, see <em>System Currency</"
 "em> in <link xref=\"account\">Account page</link> for details."
 msgstr ""
+"在您所在区域，数字的有效格式，有关详细信息，请参阅<link xref=\"account\">账户"
+"页面</link>中的<em>系统货币</em>。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:37
@@ -785,6 +859,8 @@ msgid ""
 "xref=\"account\">account settings</link> will be selected when you open a "
 "dialog to add new transaction."
 msgstr ""
+"<em>收入</em>或<em>支出</em>。打开对话框添加新的交易时，在<link xref="
+"\"account\">账户设置</link>中默认选择一个。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:41
@@ -795,7 +871,7 @@ msgstr "日期"
 #: yelp/C/transaction.page:42
 msgid ""
 "Any date can be selected, you can also create transactions for future dates."
-msgstr ""
+msgstr "可以选择任何日期，也可以为未来日期创建交易。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:45
@@ -816,6 +892,12 @@ msgid ""
 "transactions become normal transactions and can be edited or deleted "
 "separately."
 msgstr ""
+"使用此选项可创建经常性交易。添加周期性交易后，该交易将成为<em>源</em>交易。<a"
+"pp>Denaro</app>将自动生成<em>重复</em>交易的日期，直到今天或者设定的早于今天"
+"的结束日期。<em>重复</em>交易记录无法被编辑或删除，只能修改<em>源</em>交易。"
+"修改<em>源</em>交易时，<app>Denaro</app>会询问是否要修改或取消关联的<em>重复<"
+"/em>交易。如果选择取消关联，则<em>重复</em>交易变为一般交易，并且可以单独编辑"
+"或删除。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:49
@@ -827,7 +909,7 @@ msgstr "重复结束日期"
 msgid ""
 "End date for a transaction with repeat. It can't be earlier than or on the "
 "same day as start date."
-msgstr ""
+msgstr "重复交易的结束日期。不能早于或等于开始日期。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:53
@@ -838,7 +920,7 @@ msgstr "群组"
 #: yelp/C/transaction.page:54
 msgid ""
 "Each transaction can belong to only one group or none («Ungrouped» group)."
-msgstr ""
+msgstr "每笔交易只能属于一个组或不属于任何组（即«未分组»组）。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:57
@@ -853,6 +935,8 @@ msgid ""
 "selected in <link xref=\"configuration\">configuration</link>, but can be "
 "changed to any color."
 msgstr ""
+"交易的颜色。可以设置为使用组颜色或唯一颜色。选择唯一颜色时，默认设置为<link "
+"xref=\"configuration\">配置</link>中选择的颜色，但也可以修改为任何颜色。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:61
@@ -869,6 +953,10 @@ msgid ""
 "enough. Tags are only saved in transactions themselves, and as result unused "
 "tags disappear automatically on account closing."
 msgstr ""
+"交易的标记列表。一笔交易可以有无限数量的标签（或没有标签）。标签可以包含除逗"
+"号（<code>,</code>）外的任何字符，并且不限长度，但应该是短小的关键字。标签用"
+"于在筛选时，除组之外，能多一种选择。由于仅保存在交易本身中，因此在账户关闭时"
+"，未被其他账户使用的标签会自动消失。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:65
@@ -883,6 +971,8 @@ msgid ""
 "JPEG image. In case of PDF, only the first page will be saved. You can "
 "delete or upload another file anytime."
 msgstr ""
+"交易收据图片。您可以上传JPEG或PNG图像或PDF文档。但无论哪种格式，它都将被转换"
+"并保存为JPEG图像。如果是PDF，则只保存第一页。您可以随时删除或上传其他文件。"
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:69
@@ -892,37 +982,38 @@ msgstr "注释"
 #. (itstool) path: item/p
 #: yelp/C/transaction.page:70
 msgid "A freeform text note to attach to transaction."
-msgstr ""
+msgstr "要附加到交易的自由格式的文本注释。"
 
 #. (itstool) path: info/title
 #: yelp/C/transfer.page:8
 msgctxt "link"
 msgid "Transfer 💸"
-msgstr ""
+msgstr "转账 💸"
 
 #. (itstool) path: page/title
 #: yelp/C/transfer.page:20
 msgid "Transfer"
-msgstr ""
+msgstr "转账"
 
 #. (itstool) path: page/p
 #: yelp/C/transfer.page:21
 msgid ""
 "Transfer is a way to move money from one account to another. After running a "
 "transfer 2 transactions will be created with the following descriptions:"
-msgstr ""
+msgstr "转账是将钱从一个账户转移到另一个账户的一种方式。转账后，将创建2笔交易，说明如"
+"下："
 
 #. (itstool) path: item/p
 #: yelp/C/transfer.page:24
 msgid ""
 "«Transfer to <input>Destination Account Name</input>» on source account."
-msgstr ""
+msgstr "在源账户中，选择«转账到<input>目标账户</input>»。"
 
 #. (itstool) path: item/p
 #: yelp/C/transfer.page:27
 msgid ""
 "«Transfer from <input>Source Account Name</input>» on destination account."
-msgstr ""
+msgstr "在目标账户中，选择«从<input>源账户</input>转账»。"
 
 #. (itstool) path: page/p
 #: yelp/C/transfer.page:30
@@ -931,7 +1022,8 @@ msgid ""
 "freely edited or deleted. These transactions are not connected: modifying "
 "transaction on source account will not affect transaction on destination "
 "account, and vice versa."
-msgstr ""
+msgstr "使用转账创建的交易属于可自由编辑或删除的一般交易。这些交易互不关联：修改源账"
+"户上的交易不会影响目标账户上的交易，反之亦然。"
 
 #. (itstool) path: page/p
 #: yelp/C/transfer.page:31
@@ -941,10 +1033,12 @@ msgid ""
 "xref=\"configuration\">configuration</link> will be used for created "
 "transactions."
 msgstr ""
+"转账不允许创建重复交易或设置金额以外的任何属性。在<link xref="
+"\"configuration\">配置</link>中选择的颜色将被用于创建的交易。"
 
 #. (itstool) path: page/p
 #: yelp/C/transfer.page:32
 msgid ""
 "If you create a transfer between accounts with different currencies, you "
 "will be asked to provide a conversion rate."
-msgstr ""
+msgstr "如果在不同货币的账户之间创建转账，系统将要求提供汇率。"
