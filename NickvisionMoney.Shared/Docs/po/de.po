@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-03-18 12:22-0400\n"
-"PO-Revision-Date: 2024-12-22 15:00+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2026-01-10 19:02+0000\n"
+"Last-Translator: dsp77 <dannoritzer@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/nickvision-money/"
 "docs/de/>\n"
 "Language: de\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -165,6 +165,12 @@ msgid ""
 "format the numbers will be accepted as values for transaction amounts. A few "
 "examples:"
 msgstr ""
+"Jedes Mal, wenn die Anwendung gestartet wird, erhält sie Daten über die "
+"Währung und die Zahlenformatierung von Ihrem Systemgebietsschema, und diese "
+"Daten werden verwendet, um das Währungssymbol anzuzeigen (es sei denn, es "
+"wird eine benutzerdefinierte Währung verwendet, siehe unten) und um zu "
+"bestimmen, in welchem Format die Zahlen als Werte für Transaktionsbeträge "
+"akzeptiert werden. Ein paar Beispiele:"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:48
@@ -172,6 +178,8 @@ msgid ""
 "If your locale is <em>English (US)</em>, currency symbol will be set to "
 "<em>$</em> and <em>1,000.00</em> will be accepted as a valid number."
 msgstr ""
+"Wenn die lokalen Einstellungen <em>English (US)</em> ist, wird das "
+"Währungssymbol <em>$</em> und <em>1,000.00</em> ist eine akzeptierte Zahl."
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:49
@@ -653,6 +661,9 @@ msgid ""
 "End date for repeat transaction, should be in English (US) format (<em>MM/DD/"
 "YYYY</em>). Leave it empty if it's not repeat transaction."
 msgstr ""
+"Enddatum für wiederkehrende Überweisungen, sollte im englischen (US) Format "
+"sein (<em>MM/TD/YYYY</em>). Lassen Sie das Feld leer, wenn es sich nicht um "
+"eine wiederkehrende Überweisung handelt."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:76
@@ -803,7 +814,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:33
 msgid "Amount"
-msgstr ""
+msgstr "Betrag"
 
 #. (itstool) path: item/p
 #: yelp/C/transaction.page:34
@@ -815,7 +826,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:37
 msgid "Type"
-msgstr ""
+msgstr "Art"
 
 #. (itstool) path: item/p
 #: yelp/C/transaction.page:38
@@ -828,7 +839,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:41
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #. (itstool) path: item/p
 #: yelp/C/transaction.page:42
@@ -871,7 +882,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:53
 msgid "Group"
-msgstr ""
+msgstr "Gruppe"
 
 #. (itstool) path: item/p
 #: yelp/C/transaction.page:54
@@ -882,7 +893,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:57
 msgid "Color"
-msgstr ""
+msgstr "Farbe"
 
 #. (itstool) path: item/p
 #: yelp/C/transaction.page:58
@@ -912,7 +923,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:65
 msgid "Receipt"
-msgstr ""
+msgstr "Beleg"
 
 #. (itstool) path: item/p
 #: yelp/C/transaction.page:66
@@ -926,7 +937,7 @@ msgstr ""
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:69
 msgid "Notes"
-msgstr ""
+msgstr "Notizen"
 
 #. (itstool) path: item/p
 #: yelp/C/transaction.page:70
@@ -937,7 +948,7 @@ msgstr ""
 #: yelp/C/transfer.page:8
 msgctxt "link"
 msgid "Transfer 💸"
-msgstr ""
+msgstr "💸 überweisen"
 
 #. (itstool) path: page/title
 #: yelp/C/transfer.page:20
