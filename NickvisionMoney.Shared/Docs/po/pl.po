@@ -2,22 +2,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-03-18 12:22-0400\n"
-"PO-Revision-Date: 2023-11-15 13:38+0000\n"
-"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
+"PO-Revision-Date: 2025-12-29 12:03+0000\n"
+"Last-Translator: Michał Dominik <fancy0duck@duck.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/nickvision-money/"
 "docs/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.2-dev\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "ewm"
+msgstr ""
+"ewm\n"
+"Michał Dominik, 2025"
 
 #. (itstool) path: info/title
 #: yelp/C/account.page:8
@@ -51,6 +53,9 @@ msgid ""
 "them are shown in <gui>Account Settings Dialog</gui>. This dialog also opens "
 "automatically after you create a new account."
 msgstr ""
+"Na tej stronie wyjaśniono wszystkie właściwości kont <app>Denaro</app>. "
+"Większość z nich jest wyświetlana w oknie dialogowym <gui>Ustawienia konta</"
+"gui>. Okno to otwiera się również automatycznie po utworzeniu nowego konta."
 
 #. (itstool) path: page/p
 #: yelp/C/account.page:22
@@ -62,6 +67,12 @@ msgid ""
 "nmoney</file> files are 100% compatible between platforms as long as they "
 "are from the same application version (i.e. V2023.1.0)."
 msgstr ""
+"Każde konto jest przechowywane w jednym pliku <file>*.nmoney</file>. Pliki "
+"utworzone w starszej <em>stabilnej</em> wersji aplikacji <app>Denaro</app> "
+"można bezpiecznie otwierać w nowszej <em>stabilnej</em> wersji aplikacji. "
+"Chociaż aplikacja może działać na różnych platformach (Windows i Linux), "
+"pliki <file>*.nmoney</file> są w 100% kompatybilne między platformami, o ile "
+"pochodzą z tej samej wersji aplikacji (np. V2023.1.0)."
 
 #. (itstool) path: note/p
 #: yelp/C/account.page:24
@@ -70,6 +81,9 @@ msgid ""
 "unfinished modifications that can cause data loss. DO NOT use account files "
 "that contain real data in unstable versions of the app!"
 msgstr ""
+"Niestabilne wersje aplikacji (beta i RC) mogą zawierać błędy lub "
+"niedokończone zmiany, które mogą spowodować utratę danych. NIE UŻYWAJ plików "
+"kont zawierających prawdziwe dane w niestabilnych wersjach aplikacji!"
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:29
@@ -83,6 +97,8 @@ msgid ""
 "doesn't have a length limit and it can contain any characters, including "
 "emojis."
 msgstr ""
+"Nazwa konta jest wyświetlana na liście ostatnich kont oraz w zakładkach. "
+"Nazwa nie ma ograniczeń długości i może zawierać dowolne znaki, w tym emoji."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:33
@@ -99,6 +115,12 @@ msgid ""
 "these colors can be configured in <link xref=\"configuration\">global "
 "settings</link>."
 msgstr ""
+"Dostępne są trzy typy kont: 🟣<em>Bieżące</em>, 🔵<em>Oszczędnościowe</em> i "
+"🟢<em>Firmowe</em>. Typ konta jest jedynie użyteczną etykietą wyświetlaną na "
+"liście ostatnich kont i nie ma wpływu na działanie aplikacji ani na "
+"możliwości związane z kontem. Każdy typ konta ma swój własny kolor, który "
+"można skonfigurować w <link xref=\"configuration\">ustawieniach globalnych</"
+"link>."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:37
@@ -111,6 +133,8 @@ msgid ""
 "When you create a new transaction its type by default will be the same as in "
 "this setting."
 msgstr ""
+"Kiedy tworzysz nową transakcję, jej domyślny typ będzie taki sam jak w tym "
+"ustawieniu."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:41
@@ -120,12 +144,12 @@ msgstr "Częstotliwość przypomnień o transakcji"
 #. (itstool) path: item/p
 #: yelp/C/account.page:42
 msgid "The threshold used when showing reminders about upcoming transactions."
-msgstr ""
+msgstr "Częstotliwość wyświetlania przypomnień o nadchodzących transakcjach."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:45
 msgid "System Currency"
-msgstr ""
+msgstr "Waluta systemowa"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:46
@@ -136,6 +160,11 @@ msgid ""
 "format the numbers will be accepted as values for transaction amounts. A few "
 "examples:"
 msgstr ""
+"Przy każdym uruchomieniu aplikacja pobiera dane dotyczące waluty i "
+"formatowania liczb z ustawień regionalnych systemu. Dane te są "
+"wykorzystywane do wyświetlania symbolu waluty (chyba że używana jest waluta "
+"niestandardowa, patrz poniżej) oraz do określenia formatu, w jakim liczby "
+"będą akceptowane jako wartości kwot transakcji. Kilka przykładów:"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:48
@@ -143,6 +172,8 @@ msgid ""
 "If your locale is <em>English (US)</em>, currency symbol will be set to "
 "<em>$</em> and <em>1,000.00</em> will be accepted as a valid number."
 msgstr ""
+"Jeśli regionem jest <em>angielski (USA)</em>, symbolem waluty będzie <em>$</"
+"em>, a <em>1,000.00</em> będzie uznawane za prawidłową liczbę."
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:49
@@ -150,6 +181,8 @@ msgid ""
 "If your locale is <em>Italian</em>, currency symbol will be set to <em>€</"
 "em> and <em>1.000,00</em> will be accepted as a valid number."
 msgstr ""
+"Jeśli regionem jest <em>włoski</em>, symbolem waluty będzie <em>€</em>, a "
+"<em>1.000,00</em> będzie uznawane za prawidłową liczbę."
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:50
@@ -157,6 +190,8 @@ msgid ""
 "If your locale is <em>Russian</em>, currency symbol will be set to <em>₽</"
 "em> and <em>1000,00</em> will be accepted as a valid number."
 msgstr ""
+"Jeśli regionem jest <em>rosyjski</em>, symbolem waluty będzie <em>₽</em>, a "
+"<em>1000,00</em> będzie uznawane za prawidłową liczbę."
 
 #. (itstool) path: note/p
 #: yelp/C/account.page:53
@@ -173,6 +208,17 @@ msgid ""
 "output of the <code>locale</code> command to allow developers to reproduce "
 "your issue with the same settings."
 msgstr ""
+"Na Linuksie można ustawić różne ustawienia regionalne dla języka systemu i "
+"formatów. Zmiana tych ustawień różni się w zależności od używanego "
+"środowiska graficznego. Pomimo różnic w lokalizacji tych ustawień na "
+"pulpicie, zmiana tych ustawień modyfikuje zmienne środowiskowe systemu, "
+"takie jak <code>LANG</code>, <code>LC_TIME</code> i <code>LC_MONETARY</code>"
+". Aplikacja <app>Denaro</app> będzie próbowała używać formatów kwot i dat "
+"zgodnie z tymi zmiennymi. Jeśli aplikacja nie używa oczekiwanych formatów, "
+"upewnij się, że zmienne są poprawnie ustawione za pomocą polecenia <code>"
+"locale</code> w terminalu. Jeśli znajdziesz błąd i chcesz go zgłosić, podaj "
+"wynik polecenia <code>locale</code>, aby programiści mogli odtworzyć problem "
+"przy użyciu tych samych ustawień."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:57
@@ -185,26 +231,29 @@ msgid ""
 "If this option is enabled, <gui>Custom Currency Symbol</gui> will be used "
 "instead of currency symbol provided by your system locale."
 msgstr ""
+"Jeśli włączone, zamiast symbolu waluty dostarczonego przez ustawienia "
+"regionalne systemu zostanie użyty symbol waluty z opcji <gui>Użyj własnej "
+"waluty</gui>."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:61
 msgid "Custom Currency Symbol"
-msgstr "Niestandardowy symbol waluty"
+msgstr "Własny symbol waluty"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:62
 msgid "Up to 3 characters or 1 emoji. It can't be a number."
-msgstr ""
+msgstr "Maksymalnie 3 znaki lub 1 emoji. Nie może to być liczba."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:65
 msgid "Custom Currency Code"
-msgstr "Niestandardowy kod waluty"
+msgstr "Własny kod waluty"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:66
 msgid "Up to 3 characters or 1 emoji."
-msgstr ""
+msgstr "Maksymalnie 3 znaki lub 1 emoji."
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:67
@@ -212,16 +261,18 @@ msgid ""
 "An example to understand the difference between a symbol and a code: <em>$</"
 "em> is a symbol, <em>USD</em> is a code."
 msgstr ""
+"Przykład ilustrujący różnicę między symbolem a kodem: <em>$</em> jest "
+"symbolem, a <em>USD</em> jest kodem."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:70
 msgid "Custom Currency Amount Style"
-msgstr ""
+msgstr "Własny styl kwoty waluty"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:71
 msgid "A choice of displaying an amount in one of the following ways:"
-msgstr ""
+msgstr "Możliwość wyświetlania kwoty w jeden z następujących sposobów:"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:73
@@ -246,17 +297,17 @@ msgstr "n $"
 #. (itstool) path: item/title
 #: yelp/C/account.page:80
 msgid "Custom Currency Decimal and Group Separators"
-msgstr ""
+msgstr "Własny separator dziesiętny i grupy waluty"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:81
 msgid "Up to 2 characters or 1 emoji."
-msgstr ""
+msgstr "Maksymalnie 2 znaki lub 1 emoji."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:84
 msgid "Custom Currency Decimal Digits"
-msgstr ""
+msgstr "Własne miejsca dziesiętne waluty"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:85
@@ -265,6 +316,10 @@ msgid ""
 "will be as many numbers in decimal part as required to show the precise "
 "amount, but there will be no decimal part if the amount is an integer number."
 msgstr ""
+"Rozmiar części dziesiętnej wartości kwot. Opcja „Bez limitu” powoduje, że "
+"cyfry części dziesiętnej będą zawierać tyle cyfr, ile potrzeba do dokładnego "
+"przedstawienia kwoty, ale nie będzie części dziesiętnej, jeśli kwota jest "
+"liczbą całkowitą."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:88
@@ -281,11 +336,16 @@ msgid ""
 "using the account settings dialog of an open account. Removing a password "
 "will decrypt the account."
 msgstr ""
+"Każde konto może być chronione hasłem. Dodanie hasła powoduje zaszyfrowanie "
+"konta (uniemożliwia odczytanie danych bez odszyfrowania ich za pomocą hasła)"
+". Uwaga: w przypadku utraty hasła nie będzie można przywrócić danych! Hasło "
+"można również zmienić lub usunąć za pomocą okna dialogowego ustawień "
+"otwartego konta. Usunięcie hasła spowoduje odszyfrowanie konta."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:92
 msgid "Sort by Id, Date or Amount"
-msgstr ""
+msgstr "Sortuj po identyfikatorze, dacie lub kwocie"
 
 #. (itstool) path: item/p
 #: yelp/C/account.page:93
@@ -294,6 +354,10 @@ msgid ""
 "id, date or amount. Every time you change this, it will be saved to the "
 "account file and restored when you reopen the account."
 msgstr ""
+"Każde konto przechowuje informacje o tym, czy transakcje w oknie głównym "
+"mają być sortowane według identyfikatora, daty czy kwoty. Zmiana tego "
+"ustawienia zostanie zapisana w pliku konta i przywrócona po ponownym "
+"otwarciu konta."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:96
@@ -307,6 +371,9 @@ msgid ""
 "window. Every time you change this, it will be saved to the account file and "
 "restored when you reopen the account."
 msgstr ""
+"Każde konto przechowuje informacje o kolejności transakcji w oknie głównym. "
+"Zmiana tej kolejności zostanie zapisana w pliku konta i przywrócona po "
+"ponownym otwarciu konta."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:100
@@ -320,6 +387,9 @@ msgid ""
 "window is hidden or not. Every time you change groups list visibility, it's "
 "saved and then restored when you reopen the account."
 msgstr ""
+"Każde konto przechowuje informacje o tym, czy lista grup w oknie głównym "
+"jest ukryta, czy nie. Zmiana widoczności listy grup jest zapisywana, a "
+"następnie przywracana po ponownym otwarciu konta."
 
 #. (itstool) path: item/title
 #: yelp/C/account.page:104
@@ -333,6 +403,9 @@ msgid ""
 "window is hidden or not. Every time you change tags list visibility, it's "
 "saved and then restored when you reopen the account."
 msgstr ""
+"Każde konto przechowuje informacje o tym, czy lista tagów w głównym oknie "
+"jest ukryta, czy nie. Zmiana widoczności listy tagów jest zapisywana, a "
+"następnie przywracana po ponownym otwarciu konta."
 
 #. (itstool) path: info/title
 #: yelp/C/configuration.page:8
@@ -343,13 +416,13 @@ msgstr "Konfiguracja 🔧"
 #. (itstool) path: page/title
 #: yelp/C/configuration.page:20
 msgid "Configuration"
-msgstr ""
+msgstr "Konfiguracja"
 
 #. (itstool) path: page/p
 #: yelp/C/configuration.page:21
 msgid ""
 "This page describes what you can change in the application configuration."
-msgstr ""
+msgstr "Niniejsza strona opisuje, co można zmienić w konfiguracji aplikacji."
 
 #. (itstool) path: page/p
 #: yelp/C/configuration.page:22
@@ -357,11 +430,13 @@ msgid ""
 "Depending on your platform, in the application interface the configuration "
 "is referred as either <gui>Preferences</gui> or <gui>Settings</gui>."
 msgstr ""
+"W zależności od platformy, w interfejsie aplikacji konfiguracja jest "
+"określana jako <gui>Opcje</gui> lub <gui>Ustawienia</gui>."
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:25
 msgid "Theme"
-msgstr ""
+msgstr "Motyw"
 
 #. (itstool) path: item/p
 #: yelp/C/configuration.page:26
@@ -369,6 +444,9 @@ msgid ""
 "Set light or dark theme, or make <app>Denaro</app> follow your system theme. "
 "Changing this on Windows requires the application restart to apply."
 msgstr ""
+"Ustaw jasny lub ciemny motyw lub ustaw, aby aplikacja <app>Denaro</app> "
+"dostosowała się do motywu systemu. Zmiana tego ustawienia w systemie Windows "
+"wymaga ponownego uruchomienia aplikacji."
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:29
@@ -383,6 +461,10 @@ msgid ""
 "will not affect existing transactions, even if they use previously selected "
 "default color."
 msgstr ""
+"Kolor, który zostanie wybrany domyślnie podczas dodawania nowej <link "
+"xref=\"transaction\">transakcji</link> z unikalnym kolorem. Zmiana tego "
+"ustawienia nie wpłynie na istniejące transakcje, nawet jeśli używają one "
+"wcześniej wybranego koloru domyślnego."
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:33
@@ -396,6 +478,9 @@ msgid ""
 "xref=\"transfer\">transfer</link>. Changing this will not affect existing "
 "transactions."
 msgstr ""
+"Kolor, który będzie używany dla transakcji utworzonych za pomocą <link "
+"xref=\"transfer\">przelewu</link>. Zmiana tego ustawienia nie wpłynie na "
+"istniejące transakcje."
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:37
@@ -408,6 +493,8 @@ msgid ""
 "A color that will be selected by default when adding a new group. This is "
 "also a color for «Ungrouped» group."
 msgstr ""
+"Kolor, który zostanie wybrany domyślnie podczas dodawania nowej grupy. Jest "
+"to również kolor dla elementów „Bez grupy”."
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:41
@@ -420,6 +507,8 @@ msgid ""
 "A color used to mark <link xref=\"account\">accounts</link> with the "
 "<em>Checking</em> type in a recent accounts list."
 msgstr ""
+"Kolor używany do oznaczenia <link xref=\"account\">kont</link> typu <em>"
+"Bieżącego</em> na liście ostatnich kont."
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:45
@@ -432,6 +521,8 @@ msgid ""
 "A color used to mark <link xref=\"account\">accounts</link> with the "
 "<em>Savings</em> type in a recent accounts list."
 msgstr ""
+"Kolor używany do oznaczenia <link xref=\"account\">kont</link> typu <em>"
+"Oszczędnościowego</em> na liście ostatnich kont."
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:49
@@ -444,6 +535,8 @@ msgid ""
 "A color used to mark <link xref=\"account\">accounts</link> with the "
 "<em>Business</em> type in a recent accounts list."
 msgstr ""
+"Kolor używany do oznaczenia <link xref=\"account\">kont</link> typu <em>"
+"Firmowego</em> na liście ostatnich kont."
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:53
@@ -457,6 +550,9 @@ msgid ""
 "digits. For example, if this setting is enabled <em>٠١٢</em> will be used "
 "instead of <em>012</em> for locales that use Eastern Arabic numerals."
 msgstr ""
+"Czy używać cyfr natywnych dla danego regionu zamiast cyfr łacińskich. Na "
+"przykład, jeśli to ustawienie jest włączone, w regionach używających cyfr z "
+"alfabetu arabskiego zamiast <em>012</em> będą używane <em>٠١٢</em>."
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:57
@@ -470,6 +566,10 @@ msgid ""
 "into an amount field: numpad period, any period and comma, or none. If "
 "decimal separator is already presented in a field, it will not be inserted."
 msgstr ""
+"Ustaw, które klawisze spowodują wstawienie separatora dziesiętnego do pola "
+"kwoty: kropka na klawiaturze numerycznej, dowolna kropka i przecinek lub "
+"brak. Jeśli separator dziesiętny jest już obecny w polu, nie zostanie "
+"wstawiony."
 
 #. (itstool) path: item/title
 #: yelp/C/configuration.page:61
@@ -484,6 +584,10 @@ msgid ""
 "work for password-protected accounts, because CSV files can't be password-"
 "protected."
 msgstr ""
+"Folder, do którego Twoje dane będą automatycznie <link xref=\"import-"
+"export\">eksportowane do formatu CSV</link> po każdej zmianie. Ta funkcja "
+"nie działa w przypadku kont chronionych hasłem, ponieważ pliki CSV nie mogą "
+"być chronione hasłem."
 
 #. (itstool) path: info/title
 #: yelp/C/import-export.page:8
@@ -504,12 +608,12 @@ msgstr "Formaty importu"
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:26
 msgid "Dates should be in <em>YYYYMMDD</em> format."
-msgstr ""
+msgstr "Daty powinny być w formacie <em>RRRRMMDD</em>."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:30
 msgid "Dates should be in English (US) format (<em>MM/DD/YYYY</em>)."
-msgstr ""
+msgstr "Daty powinny być w formacie angielskim (USA) (<em>MM/DD/RRRR</em>)."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:34
@@ -524,11 +628,24 @@ msgid ""
 "ones. If you want to create a CSV file manually, this is the header that "
 "includes all columns <app>Denaro</app> expects to find:"
 msgstr ""
+"❗ Chociaż CSV jest popularnym formatem i niektóre banki umożliwiają swoim "
+"klientom eksportowanie informacji w formacie CSV, pliki te są w "
+"rzeczywistości tabelami, które mogą zawierać dowolne dane. Importowanie "
+"pliku CSV utworzonego w innym programie zakończy się niepowodzeniem, "
+"ponieważ jego dane nie będą kompatybilne z tym, co <app>Denaro</app> próbuje "
+"uzyskać z pliku. Celem importu/eksportu CSV jest zapewnienie możliwości "
+"dodawania danych do konta za pomocą zewnętrznych programów, takich jak "
+"edytory tekstu i pakiety biurowe. Import spowoduje jedynie dodanie nowych "
+"transakcji bez nadpisywania istniejących. Jeśli chcesz ręcznie utworzyć plik "
+"CSV, oto nagłówek zawierający wszystkie kolumny, których <app>Denaro</app> "
+"oczekuje:"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:39
 msgid "Transaction Id, should be unique for a given account. Ids start with 1."
 msgstr ""
+"Identyfikator transakcji powinien być unikalny dla danego konta. "
+"Identyfikatory zaczynają się od 1."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:43
@@ -536,22 +653,24 @@ msgid ""
 "Transaction date (or start date in case of repeat transaction), should be in "
 "English (US) format (<em>MM/DD/YYYY</em>)."
 msgstr ""
+"Data transakcji (lub data rozpoczęcia w przypadku transakcji powtarzalnej) "
+"powinna być podana w formacie angielskim (USA) (<em>MM/DD/RRRR</em>)."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:47
 msgid ""
 "Transaction description, it can contain any characters except semicolon."
-msgstr ""
+msgstr "Opis transakcji, może zawierać dowolne znaki z wyjątkiem średnika."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:51
 msgid "Transaction type: 0 for income, 1 for expense."
-msgstr ""
+msgstr "Rodzaj transakcji: 0 dla dochodu, 1 dla wydatku."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:55
 msgid "A number representing transaction repeat interval:"
-msgstr ""
+msgstr "Liczba reprezentująca interwał transakcji powtarzalnej:"
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:56
@@ -599,6 +718,9 @@ msgid ""
 "See <em>Repeat Interval</em> in <link xref=\"transaction\">transaction</"
 "link> page for details about repeat transactions."
 msgstr ""
+"Szczegółowe informacje na temat transakcji powtarzalnych można znaleźć w "
+"sekcji <em>Interwał powtarzania</em> na stronie <link xref=\"transaction\">"
+"transakcji</link>."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:68
@@ -606,6 +728,8 @@ msgid ""
 "Should be either an Id of source transaction or 0 if it's a source "
 "transaction or -1 if it's not repeat transaction."
 msgstr ""
+"Powinien to być identyfikator transakcji źródłowej lub 0, jeśli jest to "
+"transakcja źródłowa, lub -1, jeśli nie jest to transakcja powtarzalna."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:72
@@ -613,11 +737,14 @@ msgid ""
 "End date for repeat transaction, should be in English (US) format (<em>MM/DD/"
 "YYYY</em>). Leave it empty if it's not repeat transaction."
 msgstr ""
+"Data zakończenia transakcji powtarzalnej powinna być podana w formacie "
+"angielskim (USA) (<em>MM/DD/RRRR</em>). Jeśli nie jest to transakcja "
+"powtarzalna, pozostaw to pole puste."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:76
 msgid "Transaction amount in English (US) format (<em>123,456.78</em>)."
-msgstr ""
+msgstr "Kwota transakcji w formacie angielskim (USA) (<em>123,456.78</em>)."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:80
@@ -625,11 +752,13 @@ msgid ""
 "Transaction color, should be in <em>rgb(R,G,B)</em> format where <em>R</em>, "
 "<em>G</em> and <em>B</em> are integers in range between 0 and 255."
 msgstr ""
+"Kolor transakcji powinien być w formacie <em>rgb(R,G,B)</em>, gdzie <em>R</"
+"em>, <em>G</em> i <em>B</em> są liczbami całkowitymi z zakresu od 0 do 255."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:84
 msgid "Whether a transaction should use group color: 0 — false, 1 — true."
-msgstr ""
+msgstr "Czy transakcja powinna używać koloru grupy: 0 — nie, 1 — tak."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:88
@@ -637,6 +766,9 @@ msgid ""
 "Transaction's group Id. Ids start with 1. For ungrouped transaction it "
 "should be -1 (not 0, this is incorrect value for group Id)."
 msgstr ""
+"Identyfikator grupy transakcji. Identyfikatory zaczynają się od 1. W "
+"przypadku transakcji niezgrupowanych powinien wynosić -1 (nie 0, ponieważ "
+"jest to nieprawidłowa wartość dla identyfikatora grupy)."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:92
@@ -645,6 +777,10 @@ msgid ""
 "characters except semicolon. Leave it empty for ungrouped transaction, in "
 "any other cases it shouldn't be empty."
 msgstr ""
+"Nazwa grupy transakcji powinna być zgodna z identyfikatorem grupy. Może "
+"zawierać dowolne znaki z wyjątkiem średnika. W przypadku transakcji bez "
+"grupy należy pozostawić to pole puste, w pozostałych przypadkach nie powinno "
+"być puste."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:96
@@ -653,6 +789,9 @@ msgid ""
 "characters except semicolon and can be empty. Leave it empty for ungrouped "
 "transaction."
 msgstr ""
+"Opis grupy transakcji powinien być zgodny z identyfikatorem grupy. Może "
+"zawierać dowolne znaki z wyjątkiem średnika i może być pusty. Pozostaw puste "
+"pole dla transakcji bez grupy."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:100
@@ -660,11 +799,13 @@ msgid ""
 "Group color, should be in <em>rgb(R,G,B)</em> format where <em>R</em>, "
 "<em>G</em> and <em>B</em> are integers in range between 0 and 255."
 msgstr ""
+"Kolor grupy powinien być w formacie <em>rgb(R,G,B)</em>, gdzie <em>R</em>, "
+"<em>G</em> i <em>B</em> są liczbami całkowitymi z zakresu od 0 do 255."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:103
 msgid "Receipt and notes are not present in CSV."
-msgstr ""
+msgstr "Potwierdzenia i uwagi nie są dostępne w pliku CSV."
 
 #. (itstool) path: div/title
 #: yelp/C/import-export.page:108
@@ -678,6 +819,10 @@ msgid ""
 "view. If you select the current view, currently displayed transactions will "
 "be exported in the same order in which they are shown."
 msgstr ""
+"Możesz wybrać, czy chcesz wyeksportować wszystkie informacje, czy tylko te z "
+"bieżącego widoku. Jeśli wybierzesz bieżący widok, wyświetlane obecnie "
+"transakcje zostaną wyeksportowane w takiej samej kolejności, w jakiej są "
+"wyświetlane."
 
 #. (itstool) path: item/p
 #: yelp/C/import-export.page:113
@@ -687,6 +832,11 @@ msgid ""
 "colors are modified by making them half-transparent in order to make black "
 "text always clearly visible. You can set a password for an exported file."
 msgstr ""
+"Plik będzie zawierał informacje o koncie, listę transakcji i zdjęcia "
+"potwierdzeń. Transakcje są oznaczone kolorami tak jak w aplikacji, ale "
+"kolory są zmodyfikowane poprzez nadanie im półprzezroczystości, aby czarny "
+"tekst był zawsze wyraźnie widoczny. Można ustawić hasło dla eksportowanego "
+"pliku."
 
 #. (itstool) path: info/title
 #: yelp/C/index.page:7
@@ -711,6 +861,8 @@ msgid ""
 "This documentation will help you understand how to configure and manage data "
 "in <app>Denaro</app> to get the most of the application."
 msgstr ""
+"Niniejsza dokumentacja pomoże ci zrozumieć, jak konfigurować i zarządzać "
+"danymi w <app>Denaro</app>, aby w pełni wykorzystać jego możliwości."
 
 #. (itstool) path: page/p
 #: yelp/C/index.page:22
@@ -720,6 +872,11 @@ msgid ""
 "Denaro/discussions\">discussions</link> on Github, or <link href=\"https://"
 "bit.ly/3GrfEid\">join our Matrix channel</link>."
 msgstr ""
+"Aby uzyskać wsparcie, skorzystaj z <link href=\"https://github.com/"
+"NickvisionApps/Denaro/issues\">problemów</link> lub <link href=\"https://"
+"github.com/NickvisionApps/Denaro/discussions\">dyskusji</link> na Githubie, "
+"albo <link href=\"https://bit.ly/3GrfEid\">dołącz na nasz kanał Matrix</link>"
+"."
 
 #. (itstool) path: info/title
 #: yelp/C/transaction.page:8
@@ -736,6 +893,8 @@ msgstr "Transakcja"
 #: yelp/C/transaction.page:21
 msgid "This page explains all properties of transactions in <app>Denaro</app>."
 msgstr ""
+"Niniejsza strona wyjaśnia wszystkie właściwości transakcji w <app>Denaro</"
+"app>."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:25
@@ -749,6 +908,10 @@ msgid ""
 "with 1 and increase for every transaction added. Ids can't be changed, ids "
 "of removed transactions are not reused."
 msgstr ""
+"Każda transakcja ma identyfikator, który jest unikalny dla danego konta. "
+"Identyfikatory zaczynają się od 1 i rosną wraz z każdą dodaną transakcją. "
+"Identyfikatorów nie można zmieniać, a identyfikatory usuniętych transakcji "
+"nie są ponownie wykorzystywane."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:29
@@ -758,7 +921,7 @@ msgstr "Opis"
 #. (itstool) path: item/p
 #: yelp/C/transaction.page:30
 msgid "No limit on length. It can't contain semicolon."
-msgstr ""
+msgstr "Bez limitu długości. Nie może zawierać średnika."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:33
@@ -771,6 +934,9 @@ msgid ""
 "A number in a format that is valid for your locale, see <em>System Currency</"
 "em> in <link xref=\"account\">Account page</link> for details."
 msgstr ""
+"Liczba w formacie zgodnym z lokalnymi ustawieniami regionalnymi. Szczegółowe "
+"informacje można znaleźć w sekcji <em>Waluta systemowa</em> na stronie <link "
+"xref=\"account\">Konto</link>."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:37
@@ -784,6 +950,9 @@ msgid ""
 "xref=\"account\">account settings</link> will be selected when you open a "
 "dialog to add new transaction."
 msgstr ""
+"<em>Dochód</em> lub <em>Wydatek</em>. Domyślnie po otwarciu okna dialogowego "
+"dodawania nowej transakcji zostanie wybrana opcja wybrana w <link "
+"xref=\"account\">ustawieniach konta</link>."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:41
@@ -794,7 +963,7 @@ msgstr "Data"
 #: yelp/C/transaction.page:42
 msgid ""
 "Any date can be selected, you can also create transactions for future dates."
-msgstr ""
+msgstr "Można wybrać dowolną datę, a także tworzyć transakcje na przyszłe daty."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:45
@@ -815,6 +984,16 @@ msgid ""
 "transactions become normal transactions and can be edited or deleted "
 "separately."
 msgstr ""
+"Użyj tej opcji, aby utworzyć transakcję powtarzalną. Po dodaniu transakcji z "
+"interwałem powtarzania transakcja ta stanie się transakcją <em>źródłową</em>"
+". <app>Denaro</app> automatycznie wygeneruje transakcje <em>powtarzalne</em> "
+"dla dat do dnia dzisiejszego lub podanej daty końcowej, jeśli została "
+"ustawiona w przeszłości. Transakcji <em>powtarzalnych</em> nie można "
+"edytować ani usuwać, modyfikować można tylko transakcję <em>źródłową</em>. "
+"Po zmodyfikowaniu transakcji <em>źródłowej</em> aplikacja <app>Denaro</app> "
+"zapyta, czy chcesz zmodyfikować lub odłączyć transakcje <em>powtarzalne</em>"
+". Jeśli zdecydujesz się na odłączenie, transakcje <em>powtarzalne</em> staną "
+"się transakcjami zwykłymi i będzie można je edytować lub usuwać osobno."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:49
@@ -827,6 +1006,8 @@ msgid ""
 "End date for a transaction with repeat. It can't be earlier than or on the "
 "same day as start date."
 msgstr ""
+"Data zakończenia transakcji oowtarzalnej. Nie może być wcześniejsza niż data "
+"rozpoczęcia ani przypadać tego samego dnia."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:53
@@ -838,6 +1019,8 @@ msgstr "Grupa"
 msgid ""
 "Each transaction can belong to only one group or none («Ungrouped» group)."
 msgstr ""
+"Każda transakcja może należeć tylko do jednej grupy lub do żadnej (grupa «"
+"Bez grupy»)."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:57
@@ -852,6 +1035,10 @@ msgid ""
 "selected in <link xref=\"configuration\">configuration</link>, but can be "
 "changed to any color."
 msgstr ""
+"Kolor transakcji. Można ustawić kolor grupy lub unikalny kolor. W przypadku "
+"wyboru unikalnego koloru domyślnie zostanie on ustawiony na kolor wybrany w "
+"<link xref=\"configuration\">konfiguracji</link>, ale można go zmienić na "
+"dowolny kolor."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:61
@@ -868,6 +1055,12 @@ msgid ""
 "enough. Tags are only saved in transactions themselves, and as result unused "
 "tags disappear automatically on account closing."
 msgstr ""
+"Lista tagów dla transakcji. Transakcja może mieć nieograniczoną liczbę tagów "
+"(lub nie mieć żadnych tagów). Tagi mogą zawierać dowolne znaki z wyjątkiem "
+"przecinka (<code>,</code>) i mieć dowolną długość, ale powinny być krótkimi "
+"słowami kluczowymi. Tagi służą do dodatkowego filtrowania, gdy użycie grup "
+"nie jest wystarczające. Tagi są zapisywane tylko w samych transakcjach, w "
+"wyniku czego nieużywane tagi znikają automatycznie po zamknięciu konta."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:65
@@ -882,6 +1075,11 @@ msgid ""
 "JPEG image. In case of PDF, only the first page will be saved. You can "
 "delete or upload another file anytime."
 msgstr ""
+"Zdjęcie potwierdzenia transakcji. Możesz przesłać obraz w formacie JPEG lub "
+"PNG albo dokument PDF, ale niezależnie od formatu zostanie on "
+"przekonwertowany i zapisany jako obraz JPEG. W przypadku pliku PDF zapisana "
+"zostanie tylko pierwsza strona. W dowolnym momencie możesz usunąć lub "
+"przesłać inny plik."
 
 #. (itstool) path: item/title
 #: yelp/C/transaction.page:69
@@ -891,7 +1089,7 @@ msgstr "Uwagi"
 #. (itstool) path: item/p
 #: yelp/C/transaction.page:70
 msgid "A freeform text note to attach to transaction."
-msgstr ""
+msgstr "Dowolna treść notatki dołączanej do transakcji."
 
 #. (itstool) path: info/title
 #: yelp/C/transfer.page:8
@@ -910,18 +1108,20 @@ msgid ""
 "Transfer is a way to move money from one account to another. After running a "
 "transfer 2 transactions will be created with the following descriptions:"
 msgstr ""
+"Przelew to sposób na przeniesienie pieniędzy z jednego konta na drugie. Po "
+"wykonaniu przelewu zostaną utworzone dwie transakcje z następującymi opisami:"
 
 #. (itstool) path: item/p
 #: yelp/C/transfer.page:24
 msgid ""
 "«Transfer to <input>Destination Account Name</input>» on source account."
-msgstr ""
+msgstr "«Przelew na <input>nazwa konta docelowego</input>» na koncie źródłowym."
 
 #. (itstool) path: item/p
 #: yelp/C/transfer.page:27
 msgid ""
 "«Transfer from <input>Source Account Name</input>» on destination account."
-msgstr ""
+msgstr "«Przelew z <input>nazwa konta źródłowego</input>» na koncie docelowym."
 
 #. (itstool) path: page/p
 #: yelp/C/transfer.page:30
@@ -931,6 +1131,10 @@ msgid ""
 "transaction on source account will not affect transaction on destination "
 "account, and vice versa."
 msgstr ""
+"Transakcje utworzone za pomocą przelewu są prostymi transakcjami, które "
+"można dowolnie edytować lub usuwać. Transakcje te nie są powiązane: "
+"modyfikacja transakcji na koncie źródłowym nie wpływa na transakcję na "
+"koncie docelowym i odwrotnie."
 
 #. (itstool) path: page/p
 #: yelp/C/transfer.page:31
@@ -940,6 +1144,10 @@ msgid ""
 "xref=\"configuration\">configuration</link> will be used for created "
 "transactions."
 msgstr ""
+"Przelew nie pozwala na tworzenie transakcji powtarzalnych ani ustawianie "
+"żadnych właściwości innych niż kwota. Kolor wybrany w <link "
+"xref=\"configuration\">konfiguracji</link> zostanie użyty dla utworzonych "
+"transakcji."
 
 #. (itstool) path: page/p
 #: yelp/C/transfer.page:32
@@ -947,3 +1155,5 @@ msgid ""
 "If you create a transfer between accounts with different currencies, you "
 "will be asked to provide a conversion rate."
 msgstr ""
+"Jeśli utworzysz przelew między kontami w różnych walutach, zostaniesz "
+"poproszony o podanie kursu wymiany."
