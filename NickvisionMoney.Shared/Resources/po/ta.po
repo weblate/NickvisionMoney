@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-14 22:10-0500\n"
-"PO-Revision-Date: 2025-01-20 15:09+0000\n"
+"PO-Revision-Date: 2025-06-21 16:03+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/nickvision-money/"
 "app/ta/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: ../../../Controllers/AccountViewController.cs:508
 msgid "(Copy)"
@@ -29,7 +29,7 @@ msgstr "(நகல்)"
 #: ../../../Controllers/DashboardViewController.cs:121
 #, csharp-format
 msgid "{0} from {1}"
-msgstr "{1 இருந்து இலிருந்து {0}"
+msgstr "{1} இலிருந்து {0}"
 
 #: ../../../../NickvisionMoney.GNOME/Views/TransactionDialog.cs:633
 #: ../../../../NickvisionMoney.GNOME/Views/TransactionDialog.cs:639
@@ -651,8 +651,8 @@ msgid ""
 "Deleting only the source transaction will allow individual\n"
 "generated transactions to be modifiable."
 msgstr ""
-"இந்த பரிவர்த்தனை ஒரு மூல மீண்டும் பரிவர்த்தனை.\n"
-" மீண்டும் மீண்டும் பரிவர்த்தனைகளை என்ன செய்ய விரும்புகிறீர்கள்?\n"
+"இந்தப் பரிவர்த்தனை ஒரு மூல மீண்டும் பரிவர்த்தனை.\n"
+" மீண்டும் பரிவர்த்தனைகளை என்ன செய்ய விரும்புகிறீர்கள்?\n"
 "\n"
 " மூல பரிவர்த்தனையை மட்டுமே நீக்குவது தனிநபரை அனுமதிக்கும்\n"
 " மாற்றக்கூடிய பரிவர்த்தனைகள் உருவாக்கப்பட்டவை."
@@ -665,8 +665,8 @@ msgid ""
 "Updating only the source transaction will disassociate\n"
 "generated transactions from the source."
 msgstr ""
-"இந்த பரிவர்த்தனை ஒரு மூல மீண்டும் பரிவர்த்தனை.\n"
-" மீண்டும் மீண்டும் பரிவர்த்தனைகளை என்ன செய்ய விரும்புகிறீர்கள்?\n"
+"இந்தப் பரிவர்த்தனை ஒரு மூல மீண்டும் பரிவர்த்தனை.\n"
+" மீண்டும் பரிவர்த்தனைகளை என்ன செய்ய விரும்புகிறீர்கள்?\n"
 "\n"
 " மூல பரிவர்த்தனையை மட்டுமே புதுப்பிப்பது பிரிக்கும்\n"
 " மூலத்திலிருந்து உருவாக்கப்பட்ட பரிவர்த்தனைகள்."
@@ -701,12 +701,12 @@ msgstr "ஒரு குழு இல்லாமல் பரிவர்த்
 #: ../../../Controllers/AccountViewController.cs:903
 #, csharp-format
 msgid "Transfer From {0}"
-msgstr "{0 இருந்து இலிருந்து இடமாற்றம்"
+msgstr "{0} இலிருந்து இடமாற்றம்"
 
 #: ../../../Controllers/AccountViewController.cs:875
 #, csharp-format
 msgid "Transfer To {0}"
-msgstr "{0 பெறுநர் க்கு மாற்றவும்"
+msgstr "{0} க்கு மாற்றவும்"
 
 #: ../../../Controllers/MainWindowController.cs:103
 msgid "translator-credits"
@@ -1076,7 +1076,7 @@ msgstr "தொடங்கு"
 #: NickvisionMoney.GNOME/Blueprints/account_view.blp:300
 msgctxt "DateRange"
 msgid "End"
-msgstr "முடிவு"
+msgstr "முடி"
 
 #: NickvisionMoney.GNOME/Blueprints/account_view.blp:362
 msgid "Visualize"
@@ -1091,11 +1091,11 @@ msgstr "அடுத்தது"
 
 #: NickvisionMoney.GNOME/Blueprints/account_view.blp:445
 msgid "Sort From First To Last"
-msgstr "முதல் முதல் கடைசி வரை வரிசைப்படுத்தவும்"
+msgstr "முதலிருந்து கடைசி வரை வரிசைப்படுத்தவும்"
 
 #: NickvisionMoney.GNOME/Blueprints/account_view.blp:451
 msgid "Sort From Last To First"
-msgstr "கடைசியாக முதல் முதல் வரை வரிசைப்படுத்தவும்"
+msgstr "கடைசியாக முதல் தொடக்கம் வரை வரிசைப்படுத்தவும்"
 
 #: NickvisionMoney.GNOME/Blueprints/account_view.blp:483
 msgid "New Transaction (Ctrl+Shift+N)"
